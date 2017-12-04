@@ -1,6 +1,6 @@
 # Jykell configuration
 markdown: kramdown
-highlighter: rouge
+# highlighter: rouge
 paginate: 100 # it will paginate after this number
 language: 'en-us'
 
@@ -8,29 +8,29 @@ language: 'en-us'
 baseurl: /
 
 # Website info
-title: Ghost
-description: The professional publishing platform
+title: The NerdLife 
+description: The Blog About Disruptive Technology
 cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
+# logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
-production_url: https://johrlive.github.io/jasper2/
-source_url: https://github.com/johrlive/jasper2/
+# production_url: https://johrlive.github.io/jasper2/
+# source_url: https://github.com/johrlive/jasper2/
 
 # Social info
 navigation: True # show the navbar links
 subscribers: True # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter: tryghost # replace by your username
-facebook: ghost # replace by your username
+twitter: johnrlive # replace by your username
+facebook: TheNerdLifeDotCom # replace by your username
 
 # Disqus
 disqus: False
 disqus_name: johrlive # replace by your username
 
 # Google Analytics
-google_analytics: UA-69281367-1 # replace by your GA id
+google_analytics: UA-106029273-1 # replace by your GA id
 
 # Permalinks
 permalink: /:title
@@ -42,7 +42,7 @@ permalink: /:title
 
 # gems and other configs
 plugins: [jekyll-paginate, jekyll-feed]
-exclude: [vendor]
+keep_files: [assets/images, assets/js]
 
 feed:
   path: feed.xml
@@ -65,15 +65,15 @@ feed:
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-safe: False
-lsi: False
-username: johrlive
-repo: jasper2
-branch: master
-relative_source: ../jasper2/
-destination: ../jasper2-pages/
-production_url:  https://johrlive.github.io/jasper2/
-source_url:  https://github.com/johrlive/jasper2/
+# safe: False
+# lsi: False
+# username: johrlive
+# repo: jasper2
+# branch: master
+# relative_source: ../jasper2/
+# destination: ../jasper2-pages/
+# production_url:  https://johrlive.github.io/jasper2/
+# source_url:  https://github.com/johrlive/jasper2/
 
 exclude:
   - README.md
@@ -84,3 +84,5 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+  - node_modules
+  - LICENSE
